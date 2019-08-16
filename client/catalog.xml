@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://172.17.41.147:8080/server/proces_data?wsdl" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/172.17.41.147_8080/server/proces_data.wsdl"/>
+    <system systemId="http://172.17.41.147:8080/server/proces_data?xsd=1" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/172.17.41.147_8080/server/proces_data.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/server3/proces_data?wsdl" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/localhost_8080/server3/proces_data.wsdl"/>
+    <system systemId="http://localhost:8080/server3/proces_data?xsd=1" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/localhost_8080/server3/proces_data.xsd_1.xsd"/>
+    <system systemId="http://172.17.41.80:8080/server/proces_data?wsdl" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/172.17.41.80_8080/server/proces_data.wsdl"/>
+    <system systemId="http://172.17.41.80:8080/server/proces_data?xsd=1" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/172.17.41.80_8080/server/proces_data.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/server/proces_data?wsdl" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/localhost_8080/server/proces_data.wsdl"/>
+    <system systemId="http://localhost:8080/server/proces_data?xsd=1" uri="src/conf/xml-resources/web-service-references/proces_data/wsdl/localhost_8080/server/proces_data.xsd_1.xsd"/>
+</catalog>

@@ -1,0 +1,31 @@
+# Files for the ART/Dalvik VM
+*.dex
+
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Java class files
+*.class
+
+# Gradle files
+android/.gradle/
+android/build/
+
+# IntelliJ
+*.iml
+android/.idea/workspace.xml
+android/.idea/usage.statistics.xml
+android/.idea/tasks.xml
+android/app/build/
+android/local.properties
+
+#NetBeans
+client/build/
+client/nbproject/private/
+client/dist/
+server/build/
+server/nbproject/private/
+server/dist/

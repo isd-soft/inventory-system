@@ -1,0 +1,784 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://server.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://server.com/">
+
+<xs:element name="addItem" type="tns:addItem" />
+
+<xs:element name="addItem1" type="tns:addItem1" />
+
+<xs:element name="addItem1Response" type="tns:addItem1Response" />
+
+<xs:element name="addItemResponse" type="tns:addItemResponse" />
+
+<xs:element name="addType" type="tns:addType" />
+
+<xs:element name="addTypeResponse" type="tns:addTypeResponse" />
+
+<xs:element name="add_Account" type="tns:add_Account" />
+
+<xs:element name="add_AccountResponse" type="tns:add_AccountResponse" />
+
+<xs:element name="adduser" type="tns:adduser" />
+
+<xs:element name="adduserResponse" type="tns:adduserResponse" />
+
+<xs:element name="check_Account" type="tns:check_Account" />
+
+<xs:element name="check_AccountResponse" type="tns:check_AccountResponse" />
+
+<xs:element name="check_ussign" type="tns:check_ussign" />
+
+<xs:element name="check_ussignResponse" type="tns:check_ussignResponse" />
+
+<xs:element name="deleteItem" type="tns:deleteItem" />
+
+<xs:element name="deleteItemResponse" type="tns:deleteItemResponse" />
+
+<xs:element name="deleteType" type="tns:deleteType" />
+
+<xs:element name="deleteTypeResponse" type="tns:deleteTypeResponse" />
+
+<xs:element name="deleteUser" type="tns:deleteUser" />
+
+<xs:element name="deleteUserResponse" type="tns:deleteUserResponse" />
+
+<xs:element name="delete_Account" type="tns:delete_Account" />
+
+<xs:element name="delete_AccountResponse" type="tns:delete_AccountResponse" />
+
+<xs:element name="delete_unssign" type="tns:delete_unssign" />
+
+<xs:element name="delete_unssignResponse" type="tns:delete_unssignResponse" />
+
+<xs:element name="emp_items1" type="tns:emp_items1" />
+
+<xs:element name="emp_items1Response" type="tns:emp_items1Response" />
+
+<xs:element name="emp_items2" type="tns:emp_items2" />
+
+<xs:element name="emp_items2Response" type="tns:emp_items2Response" />
+
+<xs:element name="emp_items3" type="tns:emp_items3" />
+
+<xs:element name="emp_items3Response" type="tns:emp_items3Response" />
+
+<xs:element name="emp_items4" type="tns:emp_items4" />
+
+<xs:element name="emp_items4Response" type="tns:emp_items4Response" />
+
+<xs:element name="execute_delete_AssignCont1" type="tns:execute_delete_AssignCont1" />
+
+<xs:element name="execute_delete_AssignCont1Response" type="tns:execute_delete_AssignCont1Response" />
+
+<xs:element name="execute_insert_AssignCont1" type="tns:execute_insert_AssignCont1" />
+
+<xs:element name="execute_insert_AssignCont1Response" type="tns:execute_insert_AssignCont1Response" />
+
+<xs:element name="generator_work_barcode" type="tns:generator_work_barcode" />
+
+<xs:element name="generator_work_barcodeResponse" type="tns:generator_work_barcodeResponse" />
+
+<xs:element name="generator_work_mains" type="tns:generator_work_mains" />
+
+<xs:element name="generator_work_mainsResponse" type="tns:generator_work_mainsResponse" />
+
+<xs:element name="getAllItems" type="tns:getAllItems" />
+
+<xs:element name="getAllItemsResponse" type="tns:getAllItemsResponse" />
+
+<xs:element name="getAllNames" type="tns:getAllNames" />
+
+<xs:element name="getAllNamesResponse" type="tns:getAllNamesResponse" />
+
+<xs:element name="getAllTypes" type="tns:getAllTypes" />
+
+<xs:element name="getAllTypesResponse" type="tns:getAllTypesResponse" />
+
+<xs:element name="getAllUser" type="tns:getAllUser" />
+
+<xs:element name="getAllUserResponse" type="tns:getAllUserResponse" />
+
+<xs:element name="getItemById" type="tns:getItemById" />
+
+<xs:element name="getItemByIdResponse" type="tns:getItemByIdResponse" />
+
+<xs:element name="getTypeById" type="tns:getTypeById" />
+
+<xs:element name="getTypeByIdResponse" type="tns:getTypeByIdResponse" />
+
+<xs:element name="getUserById" type="tns:getUserById" />
+
+<xs:element name="getUserByIdResponse" type="tns:getUserByIdResponse" />
+
+<xs:element name="get_Account_byID" type="tns:get_Account_byID" />
+
+<xs:element name="get_Account_byIDResponse" type="tns:get_Account_byIDResponse" />
+
+<xs:element name="get_all_account" type="tns:get_all_account" />
+
+<xs:element name="get_all_accountResponse" type="tns:get_all_accountResponse" />
+
+<xs:element name="get_all_assign" type="tns:get_all_assign" />
+
+<xs:element name="get_all_assignResponse" type="tns:get_all_assignResponse" />
+
+<xs:element name="get_list_unassigneds" type="tns:get_list_unassigneds" />
+
+<xs:element name="get_list_unassignedsResponse" type="tns:get_list_unassignedsResponse" />
+
+<xs:element name="get_raport_catitem" type="tns:get_raport_catitem" />
+
+<xs:element name="get_raport_catitemResponse" type="tns:get_raport_catitemResponse" />
+
+<xs:element name="get_raport_catitems_1" type="tns:get_raport_catitems_1" />
+
+<xs:element name="get_raport_catitems_1Response" type="tns:get_raport_catitems_1Response" />
+
+<xs:element name="get_raport_empitems" type="tns:get_raport_empitems" />
+
+<xs:element name="get_raport_empitemsResponse" type="tns:get_raport_empitemsResponse" />
+
+<xs:element name="get_raport_empitems_1" type="tns:get_raport_empitems_1" />
+
+<xs:element name="get_raport_empitems_1Response" type="tns:get_raport_empitems_1Response" />
+
+<xs:element name="get_raport_empitems_2" type="tns:get_raport_empitems_2" />
+
+<xs:element name="get_raport_empitems_2Response" type="tns:get_raport_empitems_2Response" />
+
+<xs:element name="get_raport_fostangajat" type="tns:get_raport_fostangajat" />
+
+<xs:element name="get_raport_fostangajatResponse" type="tns:get_raport_fostangajatResponse" />
+
+<xs:element name="get_raport_infitem" type="tns:get_raport_infitem" />
+
+<xs:element name="get_raport_infitemResponse" type="tns:get_raport_infitemResponse" />
+
+<xs:element name="get_raport_infitem_1" type="tns:get_raport_infitem_1" />
+
+<xs:element name="get_raport_infitem_1Response" type="tns:get_raport_infitem_1Response" />
+
+<xs:element name="get_raport_infitem_2" type="tns:get_raport_infitem_2" />
+
+<xs:element name="get_raport_infitem_2Response" type="tns:get_raport_infitem_2Response" />
+
+<xs:element name="get_raport_infoangajat" type="tns:get_raport_infoangajat" />
+
+<xs:element name="get_raport_infoangajatResponse" type="tns:get_raport_infoangajatResponse" />
+
+<xs:element name="get_raport_intemes" type="tns:get_raport_intemes" />
+
+<xs:element name="get_raport_intemesResponse" type="tns:get_raport_intemesResponse" />
+
+<xs:element name="get_unssign_id" type="tns:get_unssign_id" />
+
+<xs:element name="get_unssign_idResponse" type="tns:get_unssign_idResponse" />
+
+<xs:element name="login_confirm" type="tns:login_confirm" />
+
+<xs:element name="login_confirmResponse" type="tns:login_confirmResponse" />
+
+<xs:element name="serch_date_get_1" type="tns:serch_date_get_1" />
+
+<xs:element name="serch_date_get_1Response" type="tns:serch_date_get_1Response" />
+
+<xs:element name="serch_date_get_2" type="tns:serch_date_get_2" />
+
+<xs:element name="serch_date_get_2Response" type="tns:serch_date_get_2Response" />
+
+<xs:element name="updateUser" type="tns:updateUser" />
+
+<xs:element name="updateUserResponse" type="tns:updateUserResponse" />
+
+<xs:complexType name="get_all_account">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_all_accountResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:account" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="account">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:string" minOccurs="0" />
+<xs:element name="pass" type="xs:string" minOccurs="0" />
+<xs:element name="regdate" type="xs:string" minOccurs="0" />
+<xs:element name="status" type="xs:string" minOccurs="0" />
+<xs:element name="uname" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generator_work_barcode">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="generator_work_barcodeResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:type" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="type">
+<xs:sequence>
+<xs:element name="type_id" type="xs:string" minOccurs="0" />
+<xs:element name="type_name" type="xs:string" minOccurs="0" />
+<xs:element name="type_prefix" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generator_work_mains">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="generator_work_mainsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="item">
+<xs:sequence>
+<xs:element name="item_barcode" type="xs:string" minOccurs="0" />
+<xs:element name="item_brand" type="xs:string" minOccurs="0" />
+<xs:element name="item_id" type="xs:string" minOccurs="0" />
+<xs:element name="item_model" type="xs:string" minOccurs="0" />
+<xs:element name="item_name" type="xs:string" minOccurs="0" />
+<xs:element name="item_serial" type="xs:string" minOccurs="0" />
+<xs:element name="type_id" type="xs:string" minOccurs="0" />
+<xs:element name="type_name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_Account_byID">
+<xs:sequence>
+<xs:element name="accountId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_Account_byIDResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:account" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete_Account">
+<xs:sequence>
+<xs:element name="accountId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete_AccountResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_infoangajat">
+<xs:sequence>
+<xs:element name="rs" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_infoangajatResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reset">
+<xs:sequence>
+<xs:element name="_val1" type="xs:string" minOccurs="0" />
+<xs:element name="_val2" type="xs:string" minOccurs="0" />
+<xs:element name="_val3" type="xs:string" minOccurs="0" />
+<xs:element name="_val4" type="xs:string" minOccurs="0" />
+<xs:element name="_val5" type="xs:string" minOccurs="0" />
+<xs:element name="_val6" type="xs:string" minOccurs="0" />
+<xs:element name="_val7" type="xs:string" minOccurs="0" />
+<xs:element name="_val8" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_infitem_2">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_infitem_2Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_infitem_1">
+<xs:sequence>
+<xs:element name="rs" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_infitem_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_catitem">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_catitemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_fostangajat">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_fostangajatResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addItem">
+<xs:sequence>
+<xs:element name="item_id" type="xs:string" minOccurs="0" />
+<xs:element name="item_name" type="xs:string" minOccurs="0" />
+<xs:element name="item_barcode" type="xs:string" minOccurs="0" />
+<xs:element name="item_brand" type="xs:string" minOccurs="0" />
+<xs:element name="item_model" type="xs:string" minOccurs="0" />
+<xs:element name="item_serial" type="xs:string" minOccurs="0" />
+<xs:element name="type_id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addItemResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_infitem">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_infitemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_unssign_id">
+<xs:sequence>
+<xs:element name="id1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_unssign_idResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:concat" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="concat">
+<xs:sequence>
+<xs:element name="item_barcode" type="xs:string" minOccurs="0" />
+<xs:element name="emp_id" type="xs:string" minOccurs="0" />
+<xs:element name="emps_id" type="xs:string" minOccurs="0" />
+<xs:element name="_barcodes" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllNames">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllNamesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items1">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllItems">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllItemsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items2">
+<xs:sequence>
+<xs:element name="name1" type="xs:string" minOccurs="0" />
+<xs:element name="surname1" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items2Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items3">
+<xs:sequence>
+<xs:element name="name2" type="xs:string" minOccurs="0" />
+<xs:element name="surname2" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items3Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_list_unassigneds">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_list_unassignedsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items4">
+<xs:sequence>
+<xs:element name="name3" type="xs:string" minOccurs="0" />
+<xs:element name="surname3" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="emp_items4Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserById">
+<xs:sequence>
+<xs:element name="user_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUserByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+<xs:sequence>
+<xs:element name="date" type="xs:string" minOccurs="0" />
+<xs:element name="emp_ID" type="xs:string" minOccurs="0" />
+<xs:element name="hired" type="xs:dateTime" minOccurs="0" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="add_Account">
+<xs:sequence>
+<xs:element name="ac" type="tns:account" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="add_AccountResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllTypes">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllTypesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:type" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_intemes">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_intemesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addItem1">
+<xs:sequence>
+<xs:element name="item_id" type="xs:string" minOccurs="0" />
+<xs:element name="item_name" type="xs:string" minOccurs="0" />
+<xs:element name="item_barcode" type="xs:string" minOccurs="0" />
+<xs:element name="item_brand" type="xs:string" minOccurs="0" />
+<xs:element name="item_model" type="xs:string" minOccurs="0" />
+<xs:element name="item_serial" type="xs:string" minOccurs="0" />
+<xs:element name="type_id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addItem1Response">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemById">
+<xs:sequence>
+<xs:element name="item_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getItemByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:item" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_empitems_2">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_empitems_2Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAllUser">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getAllUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:user" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="check_ussign">
+<xs:sequence>
+<xs:element name="arg0" type="tns:concat" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="check_ussignResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="execute_insert_AssignCont1">
+<xs:sequence>
+<xs:element name="barcode" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="execute_insert_AssignCont1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_empitems_1">
+<xs:sequence>
+<xs:element name="mm" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_empitems_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUser">
+<xs:sequence>
+<xs:element name="userId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="check_Account">
+<xs:sequence>
+<xs:element name="ac" type="tns:account" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="check_AccountResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="deleteItem">
+<xs:sequence>
+<xs:element name="itemId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteItemResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="adduser">
+<xs:sequence>
+<xs:element name="nume" type="xs:string" minOccurs="0" />
+<xs:element name="surname" type="xs:string" minOccurs="0" />
+<xs:element name="phone" type="xs:string" minOccurs="0" />
+<xs:element name="dob" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="adduserResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="login_confirm">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="pass" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login_confirmResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:account" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_empitems">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_empitemsResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serch_date_get_1">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serch_date_get_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addType">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+<xs:element name="name" type="xs:string" minOccurs="0" />
+<xs:element name="prefix" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addTypeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="serch_date_get_2">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="serch_date_get_2Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="execute_delete_AssignCont1">
+<xs:sequence>
+<xs:element name="barcode" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="execute_delete_AssignCont1Response">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="delete_unssign">
+<xs:sequence>
+<xs:element name="id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delete_unssignResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_all_assign">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_all_assignResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:concat" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateUser">
+<xs:sequence>
+<xs:element name="user" type="tns:user" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="updateUserResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="deleteType">
+<xs:sequence>
+<xs:element name="typeId" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteTypeResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="get_raport_catitems_1">
+<xs:sequence>
+<xs:element name="mm" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="get_raport_catitems_1Response">
+<xs:sequence>
+<xs:element name="return" type="tns:reset" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTypeById">
+<xs:sequence>
+<xs:element name="type_Id" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTypeByIdResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:type" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
